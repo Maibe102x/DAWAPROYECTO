@@ -1,0 +1,2 @@
+18:22:14 - ERR - getRecords - (OperationalError('connection to server at "host.docker.internal" (192.168.3.19), port 5432 failed: Connection timed out (0x0000274C/10060)\n\tIs the server running on that host and accepting TCP/IP connections?\n'),)
+18:22:14 - ERR - get_user_by_id - (UnboundLocalError("cannot access local variable 'cursor' where it is not associated with a value"),)

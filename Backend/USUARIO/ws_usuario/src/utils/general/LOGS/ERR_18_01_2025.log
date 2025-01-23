@@ -1,0 +1,2 @@
+22:59:01 - ERR - ExecuteNonQuery - (ForeignKeyViolation('update o delete en «tb_user» viola la llave foránea «tb_posts_u_login_fkey» en la tabla «tb_posts»\nDETAIL:  La llave (u_login)=(William Varela Vargas) todavía es referida desde la tabla «tb_posts».\n'),)
+23:01:54 - ERR - ExecuteNonQuery - (ForeignKeyViolation('update o delete en «tb_user» viola la llave foránea «tb_posts_u_login_fkey» en la tabla «tb_posts»\nDETAIL:  La llave (u_login)=(William Varela Vargas) todavía es referida desde la tabla «tb_posts».\n'),)

@@ -1,0 +1,81 @@
+#docker-compose up -d
+
+services:
+
+  ws_usuario:
+    container_name: ws_usuario_container
+    image: ws_usuario_image:latest
+    build:
+      context: ./Backend/USUARIO/ws_usuario
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '1008:1008'
+    volumes:
+      - ./USUARIO/ws_usuario:/app/ws_usuario/src/utils/general/LOGS
+    networks:
+      - app-network
+
+  ws_publicaciones:
+    container_name: ws_publicaciones_container
+    image: ws_publicaciones_image:latest
+    build:
+      context: ./Backend/PUBLICACIONES/ws_publicaciones
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '1010:1010'
+    volumes:
+      - ./PUBLICACIONES/ws_publicaciones:/app/ws_publicaciones/src/utils/general/LOGS
+    networks:
+      - app-network
+
+  ws_login:
+    container_name: ws_login_container
+    image: ws_login_image:latest
+    build:
+      context: ./Backend/LOGIN/ws_login
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '1009:1009'
+    volumes:
+      - ./LOGIN/ws_login:/app/ws_login/src/utils/general/LOGS
+    networks:
+      - app-network
+
+  ws_chats:
+    container_name: ws_chats_container
+    image: ws_chats_image:latest
+    build:
+      context: ./Backend/CHATS/ws_chats
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '1011:1011'
+    volumes:
+      - ./CHATS/ws_chats:/app/ws_chats/src/utils/general/LOGS
+    networks:
+      - app-network
+
+  react_app:
+      container_name: frontend_container
+      image: frontend:latest
+      build:
+        context: ./Frontend
+        dockerfile: Dockerfile
+      restart: always
+      ports:
+        - "2250:2250" # Mapea el puerto 2250 del contenedor al puerto 2250 del host
+      environment:
+        - PORT=2250 # Configura el puerto que usará la aplicación dentro del contenedor
+      volumes:
+        - ./frontend:/app # Sincroniza el código local con el contenedor (útil para desarrollo)
+      command: npm start
+      networks:
+        - app-network
+
+networks:
+  app-network:
+      driver: bridge
+

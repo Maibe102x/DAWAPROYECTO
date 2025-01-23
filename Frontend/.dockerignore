@@ -1,0 +1,29 @@
+# Node modules (no es necesario incluirlos en la imagen, ya que se instalarán durante la construcción)
+node_modules/
+
+# Archivos de log
+*.log
+
+# Archivos de configuración de IDEs (como Visual Studio Code)
+.vscode/
+
+# Archivos temporales generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Directorios de dependencias de otros gestores de paquetes (si usas otros gestores como Yarn)
+.yarn/
+
+# Archivos de caché de npm
+npm-debug.log
+yarn-error.log
+
+# Directorios de construcción locales (si no se generan dentro de la imagen)
+build/
+
+# Archivos de configuración de Docker
+Dockerfile
+.dockerignore
+
+# Archivos sensibles (por ejemplo, claves privadas o configuraciones locales)
+.env

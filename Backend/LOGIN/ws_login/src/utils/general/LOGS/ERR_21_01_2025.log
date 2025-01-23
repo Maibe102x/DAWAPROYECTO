@@ -1,0 +1,5 @@
+00:02:31 - ERR - login - (TypeError("'NoneType' object is not subscriptable"),)
+02:03:13 - ERR - post - (<BadRequest '400: Bad Request'>,)
+02:03:24 - ERR - getRecords - (SyntaxError("error de sintaxis en o cerca de «RETURN»\nLINE 1: ...m' AND u_password = 'nuevacon' AND u_state = true RETURN BY ...\n                                                             ^\n"),)
+02:42:44 - ERR - login - (TypeError("'NoneType' object is not subscriptable"),)
+05:03:53 - ERR - post - (OSError(22, 'Invalid argument'),)

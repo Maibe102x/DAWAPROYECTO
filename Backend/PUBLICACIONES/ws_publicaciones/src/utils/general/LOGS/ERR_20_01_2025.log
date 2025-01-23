@@ -1,0 +1,8 @@
+18:08:41 - ERR - get - (OSError(22, 'Invalid argument'),)
+18:08:41 - ERR - get - (OSError(22, 'Invalid argument'),)
+19:11:36 - ERR - put - (ValidationError({'post_id': ["El 'post_id' es obligatorio."]}),)
+19:14:33 - ERR - post - (ValidationError({'post_id': ["El 'post_id' es obligatorio."]}),)
+19:20:48 - ERR - put - (ValidationError({'post_id': ["El 'post_id' es obligatorio."]}),)
+23:16:37 - ERR - put - (ValidationError({'post_id': ["El 'post_id' es obligatorio."]}),)
+23:16:38 - ERR - put - (ValidationError({'post_id': ["El 'post_id' es obligatorio."]}),)
+23:16:41 - ERR - put - (ValidationError({'post_id': ["El 'post_id' es obligatorio."]}),)

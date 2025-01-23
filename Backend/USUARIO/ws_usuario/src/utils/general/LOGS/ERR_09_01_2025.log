@@ -1,0 +1,6 @@
+16:31:09 - ERR - token_generate - (TypeError('Object of type datetime is not JSON serializable'),)
+16:34:45 - ERR - token_generate - (TypeError('Object of type datetime is not JSON serializable'),)
+16:39:15 - ERR - token_generate - (AttributeError("'America/Guayaquil' object has no attribute 'utc'"),)
+16:41:34 - ERR - token_generate - (AttributeError("'America/Guayaquil' object has no attribute 'utc'"),)
+17:15:39 - ERR - get - (NameError("name 'internal_responde' is not defined"),)
+17:21:47 - ERR - token_Validate - (DecodeError("Invalid header string: 'utf-8' codec can't decode byte 0xb1 in position 0: invalid start byte"),)

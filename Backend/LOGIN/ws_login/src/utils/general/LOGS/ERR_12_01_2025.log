@@ -1,0 +1,2 @@
+13:10:06 - ERR - post - (OSError(22, 'Invalid argument'),)
+17:02:14 - ERR - get - (KeyError('HTTP_TOKENAPP'),)

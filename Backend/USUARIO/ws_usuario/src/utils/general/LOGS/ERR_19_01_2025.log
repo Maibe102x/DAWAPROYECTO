@@ -1,0 +1,1 @@
+12:21:48 - ERR - put - (ValidationError({'u_email': ['Not a valid email address.']}),)

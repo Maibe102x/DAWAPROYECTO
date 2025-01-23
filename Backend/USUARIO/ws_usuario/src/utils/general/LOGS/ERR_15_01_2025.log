@@ -1,0 +1,5 @@
+18:40:41 - ERR - put - (ValidationError({'u_user': ['Unknown field.'], 'u_clave': ['Unknown field.']}),)
+18:41:44 - ERR - put - (ValidationError({'u_clave': ['Unknown field.'], 'u_user': ['Unknown field.']}),)
+19:33:43 - ERR - getRecords - (UndefinedColumn('no existe la columna «u_modified»\nLINE 3:                        TO_CHAR(u_modified, \'YYYY-MM-DD"T"HH2...\n                                       ^\n'),)
+19:34:38 - ERR - getRecords - (UndefinedColumn('no existe la columna «u_modified»\nLINE 3:                          TO_CHAR(u_modified, \'YYYY-MM-DD"T"H...\n                                         ^\n'),)
+19:36:31 - ERR - getRecords - (UndefinedColumn('no existe la columna «u_modified»\nLINE 3:                          TO_CHAR(u_modified, \'YYYY-MM-DD"T"H...\n                                         ^\n'),)
